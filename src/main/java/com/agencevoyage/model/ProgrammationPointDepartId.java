@@ -7,6 +7,9 @@ public class ProgrammationPointDepartId implements Serializable {
     private Long idProgrammation;
     private Long idPointDepart;
 
+    public ProgrammationPointDepartId(Long idProgrammation, Long idPointDepart) {
+    }
+
     @Override
     public boolean equals(Object o) {
         if (!(o instanceof ProgrammationPointDepartId that)) return false;

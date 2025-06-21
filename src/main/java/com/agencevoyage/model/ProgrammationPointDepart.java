@@ -4,7 +4,7 @@ package com.agencevoyage.model;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name= "programmations_id_depart")
+@Table(name= "programmations_points_depart")
 @IdClass(ProgrammationPointDepart.class)
 public class ProgrammationPointDepart {
     @Id

@@ -7,6 +7,9 @@ public class AutocarProgrammationId implements Serializable {
     private Long idAutocar;
     private Long idProgrammation;
 
+    public AutocarProgrammationId(Long idAutocar, Long idProgrammation) {
+    }
+
     @Override
     public boolean equals(Object o) {
         if (!(o instanceof AutocarProgrammationId that)) return false;
