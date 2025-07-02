@@ -25,8 +25,9 @@ public class Client {
         @Column(nullable= false)
         private String genre;
 
-        @Column(nullable = false)
-        private Long idVille;
+        @ManyToMany
+        @JoinColumn(name = "id_ville", nullable = false)
+        private Ville ville;
 
 // Getters and Setters
 
