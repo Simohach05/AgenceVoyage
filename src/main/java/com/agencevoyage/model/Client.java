@@ -25,7 +25,8 @@ public class Client {
         @Column(nullable= false)
         private String genre;
 
-        @ManyToMany
+        @ManyToOne
+
         @JoinColumn(name = "id_ville", nullable = false)
         private Ville ville;
 
@@ -80,11 +81,10 @@ public class Client {
         this.genre = genre;
     }
 
-    public Long getIdVille() {
-        return idVille;
-    }
+    public Ville getVille() {
+        return ville;}
 
-    public void setIdVille(Long idVille) {
-        this.idVille = idVille;
+    public void setVille(Ville ville) {
+        this.ville = ville;
     }
 }
